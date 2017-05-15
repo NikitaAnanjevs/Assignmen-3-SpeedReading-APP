@@ -1,0 +1,43 @@
+﻿@model SpeedReading_5x5.Models.Books
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="jumbotron main-box">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Books</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ApplicationUser.Role)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ApplicationUser.Role)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Bodytext)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Bodytext)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SpeedReading_5x5.Models.Books>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="jumbotron main-box">
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <section class="no-padding" id="infoSection">
+        <div class="container-fluid">
+            
+            
+
+            <div class="row no-gutter popup-gallery">
+                
+@foreach (var item in Model)
+{
+                <div class="col-lg-4 col-sm-6">
+                    
+
+                    <a href="/View/Books/Details" class="portfolio-box">
+                        
+
+                        <img src="~/Images/book-btn.png" class="img-responsive" alt="">
+                        
+                    
+                        <div class="portfolio-box-caption">
+                            
+                            <div class="portfolio-box-caption-content">
+                                
+                                <div class="project-category text-faded">
+                                    <p>Book No.  @Html.DisplayFor(modelItem => item.Id)
+                                    </p>
+                                    
+                                  
+                                </div>
+                                <div class="project-name">
+                                    @Html.DisplayNameFor(model => model.Title)
+                                    @Html.DisplayFor(modelItem => item.Title)
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+}
+            </div>
+        </div>
+    </section>
+  </div>

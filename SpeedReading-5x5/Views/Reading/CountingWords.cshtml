@@ -1,0 +1,45 @@
+﻿@model SpeedReading_5x5.Models.ViewModels.ReadingPageViewModel
+
+@{
+    ViewBag.Title = "Count Words";
+    ViewBag.Counting = "Count the words";
+ 
+}
+<div class="jumbotron main-box">
+
+    <div class="row">
+     
+        <div class="col-md-3">
+            <h2> @ViewBag.Counting</h2>
+            
+            <form method="post">
+                <textarea name="countWords">
+                </textarea>
+                <input class="btn-primary button" type="submit" value="Send"/>
+            </form>
+
+          
+          
+        </div>
+        <div class="col-md-9">
+       <h2 class="" id="readText"> @ViewBag.Title</h2>
+           
+  
+
+            <div>
+                @foreach (var ListBooks in Model.Bookses)
+                {
+                    <p style="text-align: left"
+                       >@ListBooks.Bodytext</p>
+                }
+            </div>
+           
+        </div>
+ 
+        </div>
+    </div>
+
+
+
+
+

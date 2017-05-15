@@ -1,0 +1,45 @@
+﻿@using SpeedReading_5x5.Controllers
+@model IEnumerable<SpeedReading_5x5.Models.Results>
+
+@{
+    ViewBag.Title = "Results";
+}
+<div class="jumbotron main-box">
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+      
+        <th>
+            @Html.DisplayNameFor(model => model.Books.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WordNumber)
+            
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+    
+        <td>
+            @Html.DisplayFor(modelItem => item.Books.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WordNumber)
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+</div>

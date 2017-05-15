@@ -1,0 +1,39 @@
+﻿@model SpeedReading_5x5.Models.ViewModels.ReadingPageViewModel
+
+@{
+    ViewBag.Title = "Reading";
+   
+}
+<div class="jumbotron main-box">
+    
+ 
+    <h2> @ViewBag.Title</h2>
+
+
+    <div class="timerBox">
+        <div class="timer">
+            <span class="minute">30</span>:<span class="second">55</span>
+        </div>
+        <div class="control">
+            <button class="button btn-primary" onClick="timer.start(1000)">Start</button>
+            <button class="button btn-primary" onClick="timer.stop()">Stop</button>
+            @*<button onclick="timer.reset(300)">reset</button>
+            <button onclick="timer.mode(1)">count up</button>
+            <button onclick="timer.mode(0)">count down</button>*@
+        </div>
+    </div>
+
+
+
+    <div>
+        @foreach (var ListBooks in Model.Bookses)
+        {
+            <p style="text-align: left" id="textshadow">@ListBooks.Bodytext</p>
+
+
+
+        }
+    </div>
+
+
+</div>

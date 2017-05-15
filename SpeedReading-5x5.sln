@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedReading-5x5", "SpeedReading-5x5\SpeedReading-5x5.csproj", "{296CA91D-AF8A-404E-89DA-9B900D7D1848}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{296CA91D-AF8A-404E-89DA-9B900D7D1848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296CA91D-AF8A-404E-89DA-9B900D7D1848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296CA91D-AF8A-404E-89DA-9B900D7D1848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296CA91D-AF8A-404E-89DA-9B900D7D1848}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
